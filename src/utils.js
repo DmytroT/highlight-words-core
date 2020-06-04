@@ -101,7 +101,7 @@ const defaultFindChunks = ({
         searchWord = escapeRegExpFn(searchWord)
       }
 
-      const regex = new RegExp(searchWord, caseSensitive ? 'g' : 'gi')
+      const regex = new RegExp(searchWord, caseSensitive ? 'gu' : 'giu')
 
       let match
       while ((match = regex.exec(textToHighlight))) {
